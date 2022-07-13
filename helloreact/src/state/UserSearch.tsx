@@ -26,8 +26,8 @@ const UserSearch:React.FC = () => {
             <button onClick={onClick}>Find User</button>
             
             <div>
-                {user && user.name}
-                {user && user.age}
+                <p>{user && user.name}</p>
+                <p>{user && user.age}</p>
             </div>
         </div>
     );
