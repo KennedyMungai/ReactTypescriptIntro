@@ -1,9 +1,11 @@
-import {Child} from './Child';
+import {ChildAsFC} from './Child';
 
 const Parent = () => {
-    return <Child color='Red' onClick={() => console.log('Clicked')}>
-            
-    </Child>
+    return (
+        <ChildAsFC color='Red' onClick={() => console.log('Clicked')}>
+                Shapoopie
+        </ChildAsFC>
+    );
 };
 
 export default Parent;
