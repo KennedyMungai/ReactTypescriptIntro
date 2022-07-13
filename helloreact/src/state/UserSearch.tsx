@@ -16,7 +16,7 @@ const UserSearch:React.FC = () => {
             return user.name === name;
         });
 
-        console.log(foundUser);
+        setUser(foundUser);
     };
 
     return(
