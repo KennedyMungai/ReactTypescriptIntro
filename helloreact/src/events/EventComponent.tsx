@@ -8,6 +8,7 @@ const EventComponent: React.FC = () => {
     return(
         <div>
             <input type="text" onChange={onChange}/>
+            <div>Drag Me!</div>
         </div>
     );
 };
