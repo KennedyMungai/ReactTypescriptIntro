@@ -9,3 +9,5 @@ export const Child = ({ color }: ChildProps) => {
 export const ChildAsFC: React.FC<ChildProps> = ({color}) => {
     return <div>{color}</div>;
 };
+
+ChildAsFC.displayName
