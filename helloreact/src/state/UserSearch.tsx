@@ -27,6 +27,7 @@ const UserSearch:React.FC = () => {
             
             <div>
                 {user && user.name}
+                {user && user.age}
             </div>
         </div>
     );
