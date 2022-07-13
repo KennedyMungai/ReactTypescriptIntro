@@ -6,7 +6,7 @@ const EventComponent: React.FC = () => {
     };
 
     const onDragStart = (event: React.DragEvent<HTMLDivElement>) => {
-        console.log("I'm being dragged");
+        console.log(event);
     };
 
     return(
