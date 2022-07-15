@@ -8,7 +8,7 @@ const Users = [
 
 
 const UserSearch:React.FC = () => {
-    const inputRef = useRef();
+    const inputRef = useRef<HTMLInputElement>();
     const [name, setName] = useState('');
     const [user, setUser] = useState<{name: string, age: number} | undefined>();
 
