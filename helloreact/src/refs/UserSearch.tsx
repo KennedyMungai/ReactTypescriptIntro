@@ -13,7 +13,9 @@ const UserSearch:React.FC = () => {
     const [user, setUser] = useState<{name: string, age: number} | undefined>();
 
     useEffect(() => {
-
+        if (!inputRef.current) {
+            return;
+        }
     }, []);
 
     const onClick = () => {
