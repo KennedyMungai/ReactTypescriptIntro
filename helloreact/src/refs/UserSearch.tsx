@@ -16,6 +16,8 @@ const UserSearch:React.FC = () => {
         if (!inputRef.current) {
             return;
         }
+
+        inputRef.current.focus()
     }, []);
 
     const onClick = () => {
