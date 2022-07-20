@@ -1,10 +1,6 @@
 import { ActionType } from "../action-types";
 
-interface RepositoriesState {
-    loading: boolean;
-    error: string | null;
-    data: string[];
-}
+
 
 interface SearchRepositoriesAction {
     type: ActionType.SEARCH_REPOSITORIES;
