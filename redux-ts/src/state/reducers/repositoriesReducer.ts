@@ -10,6 +10,7 @@ interface SearchRepositoriesAction {
 
 interface SearchRepositoriesSuccessAction {
     type: 'search_repositories_success';
+    payload: string[];
 }
 
 const reducer = (state: RepositoriesState, action: Action): RepositoriesState => {
