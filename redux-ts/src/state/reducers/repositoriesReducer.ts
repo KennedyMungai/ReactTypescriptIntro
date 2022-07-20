@@ -8,6 +8,10 @@ interface SearchRepositoriesAction {
     type: 'search_repositories';
 }
 
+interface SearchRepositoriesSuccessAction {
+    type: 'search_repositories_success';
+}
+
 const reducer = (state: RepositoriesState, action: Action): RepositoriesState => {
     switch (action.type) {
         case 'search_repositories':
