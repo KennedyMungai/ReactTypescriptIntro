@@ -5,5 +5,5 @@ import { actionCreators } from "../state";
 export const useActions = () => {
     const dispatch = useDispatch();
 
-    bindActionCreators(actionCreators, dispatch);
+    return bindActionCreators(actionCreators, dispatch);
 };  
