@@ -1,3 +1,5 @@
+import { ActionType } from "../action-types";
+
 interface RepositoriesState {
     loading: boolean;
     error: string | null;
