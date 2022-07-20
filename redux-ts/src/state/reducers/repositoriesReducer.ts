@@ -4,10 +4,6 @@ interface RepositoriesState {
     data: string[];
 }
 
-interface Action {
-    type: string;
-    payload?: any;
-}
 
 const reducer = (state: RepositoriesState, action: Action): RepositoriesState => {
     switch (action.type) {
