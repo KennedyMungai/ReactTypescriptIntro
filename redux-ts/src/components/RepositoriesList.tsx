@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useTypedSelector } from "../hooks/useTypeSelector";
 import { useActions } from "../hooks/useActions";
 
 const RepositoriesList: React.FC = () => {
