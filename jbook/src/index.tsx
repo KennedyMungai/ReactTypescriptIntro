@@ -28,7 +28,7 @@ const App = () => {
             target: 'es2015'
         });
 
-        console.log(result);
+        setCode(result.code);
     };
 
     return <div>
