@@ -19,7 +19,9 @@ const App = () => {
     }, []);
 
     const onClick = () => {
-        console.log(input);
+        if (!ref.current) {
+            
+        }
     };
 
     return <div>
