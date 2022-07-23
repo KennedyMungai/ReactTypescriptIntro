@@ -37,7 +37,7 @@ const App = () => {
             <button onClick={onClick}>Submit</button>
         </div>
 
-        <pre></pre>
+        <pre>{code}</pre>
     </div>
 };
 
