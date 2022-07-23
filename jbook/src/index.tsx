@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 
 const App = () => {
     const [input, setInput] = useState('');
+    const [code, setCode] = useState('');
 
     return <div>
         <textarea></textarea>
