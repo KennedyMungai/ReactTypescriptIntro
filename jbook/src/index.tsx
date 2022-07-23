@@ -22,6 +22,8 @@ const App = () => {
         if (!ref.current) {
             return;
         }
+
+        console.log(ref.current);
     };
 
     return <div>
