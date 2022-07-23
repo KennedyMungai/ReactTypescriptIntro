@@ -6,6 +6,13 @@ const App = () => {
     const [input, setInput] = useState('');
     const [code, setCode] = useState('');
 
+    const startService = async () => {
+        const service = await esbuild.startService({
+            worker: true,
+            wasmURL: '/esbuild.wasm'
+        });
+    };
+
     const onClick = () => {
         console.log(input);
     };
