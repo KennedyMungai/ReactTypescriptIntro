@@ -1,5 +1,5 @@
 import * as esbuild from 'esbuild-wasm';
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import ReactDOM from 'react-dom';
 
 const App = () => {
