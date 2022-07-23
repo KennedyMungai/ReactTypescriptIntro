@@ -11,6 +11,8 @@ const App = () => {
             worker: true,
             wasmURL: '/esbuild.wasm'
         });
+
+        console.log(service);
     };
 
     const onClick = () => {
