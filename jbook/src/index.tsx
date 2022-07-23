@@ -1,6 +1,9 @@
+import { useState } from "react";
 import ReactDOM from "react-dom";
 
 const App = () => {
+    const [input, setInput] = useState('');
+
     return <div>
         <textarea></textarea>
         <div>
