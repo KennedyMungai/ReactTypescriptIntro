@@ -20,7 +20,7 @@ const App = () => {
 
     const onClick = () => {
         if (!ref.current) {
-            
+            return;
         }
     };
 
