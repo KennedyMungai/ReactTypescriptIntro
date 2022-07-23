@@ -6,7 +6,7 @@ const App = () => {
     const [code, setCode] = useState('');
 
     return <div>
-        <textarea onChange={e => setInput(e.target.value)}></textarea>
+        <textarea value={input} onChange={e => setInput(e.target.value)}></textarea>
         <div>
             <button>Submit</button>
         </div>
