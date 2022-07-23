@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import ReactDOM from 'react-dom';
 
 const App = () => {
+    const ref = useRef<any>();
     const [input, setInput] = useState('');
     const [code, setCode] = useState('');
 
