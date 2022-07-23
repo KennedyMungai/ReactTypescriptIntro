@@ -1,6 +1,6 @@
 import * as esbuild from 'esbuild-wasm';
 import { useState, useEffect } from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from 'react-dom';
 
 const App = () => {
     const [input, setInput] = useState('');
