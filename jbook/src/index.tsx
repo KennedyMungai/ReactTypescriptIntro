@@ -8,7 +8,7 @@ const App = () => {
     const [code, setCode] = useState('');
 
     const startService = async () => {
-        const service = await esbuild.startService({
+        ref.current = await esbuild.startService({
             worker: true,
             wasmURL: '/esbuild.wasm'
         });
