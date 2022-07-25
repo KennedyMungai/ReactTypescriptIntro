@@ -31,6 +31,8 @@ const App = () => {
             Plugins: [unpkgPathPlugin()]
         });
 
+        console.log(result);
+
         setCode(result.code);
     };
 
