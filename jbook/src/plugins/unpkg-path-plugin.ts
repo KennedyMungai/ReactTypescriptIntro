@@ -42,7 +42,7 @@ export const unpkgPathPlugin = () => {
         }
 
         // Check to see if we have already fetched this file and if it is already in the cache
-        const cachedResult = await fileCache.getItem(args.path);
+        const cachedResult = await fileCache.getItem<esbuild.OnLoadResult>(args.path);
 
         // if it is, return it immediately
         if (cachedResult) {
