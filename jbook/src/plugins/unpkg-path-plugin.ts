@@ -40,9 +40,14 @@ export const unpkgPathPlugin = () => {
             `,
           };
         }
+
+        // Check to see if we have already fetched this file and if it is already in the cache
+        // if it is, return it immediately
         
         const { data } = await axios.get(args.path);
         
+        // Store the response in cache
+
         return {
           loader: 'jsx',
           contents: data
