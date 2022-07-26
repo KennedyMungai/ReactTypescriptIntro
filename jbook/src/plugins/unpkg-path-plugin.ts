@@ -51,7 +51,7 @@ export const unpkgPathPlugin = () => {
         
         const { data, request } = await axios.get(args.path);
         
-        const result = {
+        const result: esbuild.OnLoadResult = {
           loader: 'jsx',
           contents: data,
           resolveDir: new URL('./', request.responseURL).pathname
