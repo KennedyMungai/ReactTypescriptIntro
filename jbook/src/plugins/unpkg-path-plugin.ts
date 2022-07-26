@@ -10,6 +10,8 @@ const fileCache = localforage.createInstance({
   await fileCache.setItem('color', 'red')
 
   const color = await fileCache.getItem('color');
+
+  console.log(color);
 })()
 
 export const unpkgPathPlugin = () => {
