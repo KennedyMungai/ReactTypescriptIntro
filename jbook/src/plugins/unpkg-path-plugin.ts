@@ -49,7 +49,7 @@ export const unpkgPathPlugin = () => {
           return cachedResult;
         }
         
-        const { data } = await axios.get(args.path);
+        const { data, request } = await axios.get(args.path);
         
         const result = {
           loader: 'jsx',
