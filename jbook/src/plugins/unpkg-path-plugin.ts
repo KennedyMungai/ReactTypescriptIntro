@@ -51,12 +51,13 @@ export const unpkgPathPlugin = () => {
         
         const { data } = await axios.get(args.path);
         
+        const result = {
+          loader: 'jsx',
+          contents: data,
+          resolveDir: new URL('./', request.responseURL).pathname
+        };
         // Store the response in cache
 
-        return {
-          loader: 'jsx',
-          contents: data
-        };
       });
     },
   };
