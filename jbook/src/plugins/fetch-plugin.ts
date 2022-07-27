@@ -38,7 +38,7 @@ export const fetchPlugin = (inputCode: string) => {
                 const contents = fileType === 'css' ? 
                 `
                     const style = document.createElement('style');
-                    style.innerText = '';
+                    style.innerText = '${escaped}';
                     document.head.appendChild(style);
                 `: data;
 
