@@ -34,10 +34,7 @@ export const unpkgPathPlugin = (inputCode: string) => {
         if (args.path === 'index.js') {
           return {
             loader: 'jsx',
-            contents: `
-              import React, { useState } from 'react';
-              console.log(React, useState);
-            `,
+            contents: inputCode,
           };
         }
 
