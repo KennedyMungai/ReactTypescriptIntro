@@ -15,8 +15,6 @@ export const unpkgPathPlugin = (inputCode: string) => {
       });
 
       build.onResolve({ filter: /.*/ }, async (args: any) => {
-        console.log('onResolve', args);
-        
         if (args.path.includes('./') || args.path.includes('../')) {
           return{
             namespace: 'a',
