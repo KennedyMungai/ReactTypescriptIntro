@@ -28,8 +28,6 @@ export const fetchPlugin = (inputCode: string) => {
 
                 const { data, request } = await axios.get(args.path);
 
-                const fileType = args.path.match(/.css$/) ? 'css' : 'jsx';
-
                 const escaped = data
                     .replace(/\n/g, '')
                     .replace(/"/g, '\\"')
