@@ -70,12 +70,6 @@ export const fetchPlugin = (inputCode: string) => {
                     document.head.appendChild(style);
                 `: data;
 
-                const result: esbuild.OnLoadResult = {
-                    loader: 'jsx',
-                    contents,
-                    resolveDir: new URL('./', request.responseURL).pathname
-                };
-
                 // Store the response in cache
                 await fileCache.setItem(args.path, result);
 
