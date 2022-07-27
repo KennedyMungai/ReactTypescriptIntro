@@ -1,7 +1,6 @@
 import * as esbuild from 'esbuild-wasm';
 import axios from 'axios';
 
-
 export const unpkgPathPlugin = (inputCode: string) => {
   return {
     name: 'unpkg-path-plugin',
