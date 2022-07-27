@@ -30,6 +30,13 @@ export const fetchPlugin = (inputCode: string) => {
 
                 const fileType = args.path.match(/.css$/) ? 'css' : 'jsx';
 
+                const contents = fileType === 'css' ? 
+                `
+                    const style = document.createElement('style');
+                    style.innerText = 'body { background-color: "red"};
+                    document.head.appendChild(style);
+                `: data;
+
                 const result: esbuild.OnLoadResult = {
                     loader: 'jsx',
                     contents: data,
