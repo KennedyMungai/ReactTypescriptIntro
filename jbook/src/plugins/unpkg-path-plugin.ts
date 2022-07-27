@@ -33,7 +33,6 @@ export const unpkgPathPlugin = (inputCode: string) => {
         };
       });
       build.onLoad({ filter: /.*/ }, async (args: any) => {
-        console.log('onLoad', args);
         if (args.path === 'index.js') {
           return {
             loader: 'jsx',
