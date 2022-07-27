@@ -57,7 +57,7 @@ const App = () => {
         </div>
 
         <pre>{code}</pre>
-        <iframe src="/test.html"></iframe>
+        <iframe sandbox="" src="/test.html"></iframe>
     </div>
 };
 
