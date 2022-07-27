@@ -10,14 +10,14 @@ export const fetchPlugin = (inputCode: string) => {
     return {
         name: 'fetch-plugin',
         setup(build: esbuild.PluginBuild) {
-            build.onLoad({ filter: /.*/ }, async (args: any) => {
-                if (args.path === 'index.js') {
-                    return {
-                        loader: 'jsx',
-                        contents: inputCode,
-                    };
-                }
+            build.onLoad({ filter: /(^index\.js$)/}, () => {
+                return {
+                    loader: 'jsx',
+                    contents: inputCode,
+                };
+            });
 
+            build.onLoad({ filter: /.*/ }, async (args: any) => {
                 // // Check to see if we have already fetched this file and if it is already in the cache
                 // const cachedResult = await fileCache.getItem<esbuild.OnLoadResult>(args.path);
 
