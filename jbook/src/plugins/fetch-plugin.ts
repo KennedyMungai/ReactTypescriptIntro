@@ -33,12 +33,12 @@ export const fetchPlugin = (inputCode: string) => {
                     .replace(/"/g, '\\"')
                     .replace(/'/g, "\\'");
 
-                const contents = fileType === 'css' ? 
+                const contents =
                 `
                     const style = document.createElement('style');
                     style.innerText = '${escaped}';
                     document.head.appendChild(style);
-                `: data;
+                `;
 
                 const result: esbuild.OnLoadResult = {
                     loader: 'jsx',
