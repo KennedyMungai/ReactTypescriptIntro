@@ -29,7 +29,12 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
             monacoEditor
         );
 
-        highlighter.highLightOnDidChangeModelContent();
+        highlighter.highLightOnDidChangeModelContent(
+            () => { },
+            () => { },
+            undefined,
+            () => { }
+        );
     };
 
     const onFormatClick = () => {
