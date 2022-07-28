@@ -42,16 +42,17 @@ const App = () => {
         setCode(result.outputFiles[0].text);
     };
 
-    return <div>
-        <textarea value={input} onChange={e => setInput(e.target.value)}></textarea>
+    return (
         <div>
-            <button onClick={onClick}>Submit</button>
-        </div>
+            <textarea value={input} onChange={e => setInput(e.target.value)}></textarea>
+            <div>
+                <button onClick={onClick}>Submit</button>
+            </div>
 
-        <pre>{code}</pre>
-        <iframe srcDoc={html} sandbox=""/>
-    </div>
-};
+            <pre>{code}</pre>
+            <iframe srcDoc={html} sandbox=""/>
+        </div>
+)};
 
 const html = `
     <h1>Local HTML doc</h1>
