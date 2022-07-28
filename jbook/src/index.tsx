@@ -1,3 +1,4 @@
+import 'bulmaswatch/superhero/bulmaswatch.min.css';
 import * as esbuild from 'esbuild-wasm';
 import { useState, useEffect, useRef } from "react";
 import ReactDOM from 'react-dom';
@@ -70,7 +71,7 @@ const App = () => {
 
     return (
         <div>
-            <CodeEditor 
+            <CodeEditor
                 initialValue='const a = 1;'
                 onChange={(value) => setInput(value)}
             />
@@ -78,10 +79,11 @@ const App = () => {
             <div>
                 <button onClick={onClick}>Submit</button>
             </div>
-            <iframe title='preview' ref={iframe} srcDoc={html} sandbox="allow-scripts"/>
+            <iframe title='preview' ref={iframe} srcDoc={html} sandbox="allow-scripts" />
         </div>
-)};
+    )
+};
 
 ReactDOM.render(
-    <App /> , document.querySelector('#root')
+    <App />, document.querySelector('#root')
 );
