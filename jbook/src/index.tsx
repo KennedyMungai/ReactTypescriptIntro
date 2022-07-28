@@ -6,6 +6,7 @@ import { unpkgPathPlugin } from './plugins/unpkg-path-plugin';
 
 const App = () => {
     const ref = useRef<any>();
+    const iframe = useRef<any>();
     const [input, setInput] = useState('');
     const [code, setCode] = useState('');
 
