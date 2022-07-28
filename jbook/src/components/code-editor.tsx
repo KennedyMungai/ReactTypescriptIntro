@@ -5,9 +5,9 @@ interface CodeEditorProps {
 
 }
 
-const CodeEditor: React.FC<CodeEditorProps> = () => {
+const CodeEditor: React.FC<CodeEditorProps> = ({initialValue}) => {
     return <MonacoEditor 
-        value="const a = 1;"
+        value={ initialValue }
         height="500px" 
         language='javascript' 
         theme='dark'
