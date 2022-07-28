@@ -2,10 +2,10 @@ import MonacoEditor from '@monaco-editor/react';
 
 interface CodeEditorProps {
     initialValue: string;
-    
+
 }
 
-const CodeEditor = () => {
+const CodeEditor: React.FC<CodeEditorProps> = () => {
     return <MonacoEditor 
         value="const a = 1;"
         height="500px" 
