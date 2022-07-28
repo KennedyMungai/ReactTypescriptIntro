@@ -57,7 +57,7 @@ const App = () => {
                             eval(event.data);
                         } catch (error) {
                             const root = document.querySelector('#root');
-                            root.innerHTML = '<div style="color: red;">' + error + '</div>'
+                            root.innerHTML = '<div style="color: red;"><h4>Runtime Error</h4>' + error + '</div>'
                         }
                     }, false);
                 </script>
