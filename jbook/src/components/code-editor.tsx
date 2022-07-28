@@ -12,7 +12,8 @@ const CodeEditor = () => {
             folding: false,
             lineNumbersMinChars: 3,
             fontSize: 16,
-            scrollBeyondLastLine: false
+            scrollBeyondLastLine: false,
+            automaticLayout: true
         }}
         />
 };
