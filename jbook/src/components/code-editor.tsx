@@ -21,6 +21,13 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
         });
 
         monacoEditor.getModel()?.updateOptions({ tabSize: 2 })
+
+        const highighter = new Highlighter(
+            // @ts-ignore
+            window.monaco,
+            codeShift,
+            monacoEditor
+        );
     };
 
     const onFormatClick = () => {
