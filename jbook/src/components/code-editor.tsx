@@ -10,7 +10,8 @@ const CodeEditor = () => {
             minimap: {enabled: false},
             showUnused: false,
             folding: false,
-            lineNumbersMinChars: 3
+            lineNumbersMinChars: 3,
+            fontSize: 16
         }}
         />
 };
