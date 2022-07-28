@@ -28,6 +28,8 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
             codeShift,
             monacoEditor
         );
+
+        highighter.highlightOnDidChangeModelContent();
     };
 
     const onFormatClick = () => {
