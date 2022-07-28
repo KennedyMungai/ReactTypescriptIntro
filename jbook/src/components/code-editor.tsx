@@ -7,7 +7,9 @@ interface CodeEditorProps {
 
 const CodeEditor: React.FC<CodeEditorProps> = ({initialValue, onChange}) => {
     const onEditorDidMount = (getValue: () => string, monacoEditor: any) => {
-        console.log(getValue());
+        monacoEditor.onDidChangeModelContent(() => {
+            console.log(getValue());
+        });
     };
 
     return <MonacoEditor 
