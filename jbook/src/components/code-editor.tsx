@@ -8,7 +8,8 @@ const CodeEditor = () => {
         options={{
             wordWrap: 'on',
             minimap: {enabled: false},
-            showUnused: false
+            showUnused: false,
+            folding: false
         }}
         />
 };
