@@ -60,10 +60,6 @@ const App = () => {
         </div>
 )};
 
-const html = `
-    <h1>Local HTML doc</h1>
-`;
-
 ReactDOM.render(
     <App /> , document.querySelector('#root')
 );
