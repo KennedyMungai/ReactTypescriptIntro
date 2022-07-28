@@ -57,7 +57,7 @@ const App = () => {
                             eval(event.data);
                         } catch (error) {
                             const root = document.querySelector('#root');
-                            root.innerHTML = '<div>error</div>'
+                            root.innerHTML = '<div>' + error + '</div>'
                         }
                     }, false);
                 </script>
