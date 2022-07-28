@@ -24,7 +24,13 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
         // Get the current value from the editor
         const unformatted = editorRef.current.getModel().getValue();
         // Format that value
-        const formatted = prettier.format(unformatted);
+        const formatted = prettier.format(unformatted, {
+            parser: 'babel',
+            plugins: [parser],
+            useTabs: false,
+            semi: true,
+            singleQuote: true
+        });
         // Set the formatted value back in the editor
     };
 
