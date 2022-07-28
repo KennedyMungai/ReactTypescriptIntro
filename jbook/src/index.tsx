@@ -40,7 +40,9 @@ const App = () => {
             }
         });
 
-        setCode(result.outputFiles[0].text);
+        // setCode(result.outputFiles[0].text);
+
+        iframe.current.postMessage(result.outputFiles[0].text, '*');
     };
 
     const html = `
