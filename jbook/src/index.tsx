@@ -53,7 +53,12 @@ const App = () => {
 
                 <script>
                     window.addEventListener('message', (event) => {
-                        eval(event.data);
+                        try{
+                            eval(event.data);
+                        } catch (error) {
+                            const root = document.querySelector('#root');
+                            root.innerHTML = '<div>error</div>'
+                        }
                     }, false);
                 </script>
             </body>
