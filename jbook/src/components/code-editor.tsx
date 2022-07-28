@@ -1,5 +1,10 @@
 import MonacoEditor from '@monaco-editor/react';
 
+interface CodeEditorProps {
+    initialValue: string;
+    
+}
+
 const CodeEditor = () => {
     return <MonacoEditor 
         value="const a = 1;"
