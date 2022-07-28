@@ -57,9 +57,13 @@ const App = () => {
         </div>
 
         <pre>{code}</pre>
-        <iframe sandbox="allow-same-origin" src="/test.html"></iframe>
+        <iframe srcDoc={html} />
     </div>
 };
+
+const html = `
+    <h1>Local HTML doc</h1>
+`;
 
 ReactDOM.render(
     <App /> , document.querySelector('#root')
