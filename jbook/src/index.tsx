@@ -42,6 +42,12 @@ const App = () => {
         setCode(result.outputFiles[0].text);
     };
 
+    const html = `
+        <script>
+            ${code}
+        </script>
+    `;
+
     return (
         <div>
             <textarea value={input} onChange={e => setInput(e.target.value)}></textarea>
