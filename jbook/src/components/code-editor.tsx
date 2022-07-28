@@ -9,7 +9,8 @@ const CodeEditor = () => {
             wordWrap: 'on',
             minimap: {enabled: false},
             showUnused: false,
-            folding: false
+            folding: false,
+            lineNumbersMinChars: 3
         }}
         />
 };
