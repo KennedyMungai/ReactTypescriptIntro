@@ -21,8 +21,6 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
     };
 
     const onFormatClick = () => {
-        console.log(editorRef.current);
-
         // Get the current value from the editor
 
         // Format that value
