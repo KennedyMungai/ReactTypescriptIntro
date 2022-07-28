@@ -9,6 +9,8 @@ interface CodeEditorProps {
 }
 
 const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
+    const editorRef = useRef<any>();
+
     const onEditorDidMount: EditorDidMount = (getValue, monacoEditor) => {
         monacoEditor.onDidChangeModelContent(() => {
             onChange(getValue());
