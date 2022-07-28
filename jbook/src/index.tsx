@@ -57,7 +57,7 @@ const App = () => {
         </div>
 
         <pre>{code}</pre>
-        <iframe srcDoc={html} />
+        <iframe srcDoc={html} sandbox="allow-same-origin"/>
     </div>
 };
 
