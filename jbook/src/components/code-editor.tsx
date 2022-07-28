@@ -6,7 +6,8 @@ const CodeEditor = () => {
         language='javascript' 
         theme='dark'
         options={{
-            wordWrap: 'on'
+            wordWrap: 'on',
+            minimap: {enabled: false}
         }}
         />
 };
