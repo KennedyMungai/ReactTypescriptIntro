@@ -56,7 +56,7 @@ const App = () => {
             </div>
 
             <pre>{code}</pre>
-            <iframe srcDoc={html} sandbox=""/>
+            <iframe srcDoc={html} sandbox="allow-scripts"/>
         </div>
 )};
 
