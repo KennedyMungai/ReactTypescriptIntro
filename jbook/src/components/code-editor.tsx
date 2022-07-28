@@ -16,6 +16,14 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
         monacoEditor.getModel()?.updateOptions({ tabSize: 2 })
     };
 
+    const onFormatClick = () => {
+        // Get the current value from the editor
+
+        // Format that value
+
+        // Set the formatted value back in the editor
+    };
+
     return (
         <div>
             <button onClick={onFormatClick}>Format</button>
