@@ -6,7 +6,12 @@ interface CodeEditorProps {
 }
 
 const CodeEditor: React.FC<CodeEditorProps> = ({initialValue, onChange}) => {
+    const onEditorDidMount = () => {
+        
+    };
+
     return <MonacoEditor 
+        editorDidMount = {onEditorDidMount}
         value={ initialValue }
         height="500px" 
         language='javascript' 
