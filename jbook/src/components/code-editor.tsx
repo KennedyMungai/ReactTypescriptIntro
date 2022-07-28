@@ -1,28 +1,29 @@
 import MonacoEditor, { EditorDidMount } from '@monaco-editor/react';
+import prettier from 'prettier';
 
 interface CodeEditorProps {
     initialValue: string;
     onChange(value: string): void;
 }
 
-const CodeEditor: React.FC<CodeEditorProps> = ({initialValue, onChange}) => {
+const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
     const onEditorDidMount: EditorDidMount = (getValue, monacoEditor) => {
         monacoEditor.onDidChangeModelContent(() => {
             onChange(getValue());
         });
 
-        monacoEditor.getModel()?.updateOptions({ tabSize: 2})
+        monacoEditor.getModel()?.updateOptions({ tabSize: 2 })
     };
 
-    return <MonacoEditor 
-        editorDidMount = {onEditorDidMount}
-        value={ initialValue }
-        height="500px" 
-        language='javascript' 
+    return <MonacoEditor
+        editorDidMount={onEditorDidMount}
+        value={initialValue}
+        height="500px"
+        language='javascript'
         theme='dark'
         options={{
             wordWrap: 'on',
-            minimap: {enabled: false},
+            minimap: { enabled: false },
             showUnused: false,
             folding: false,
             lineNumbersMinChars: 3,
@@ -30,7 +31,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({initialValue, onChange}) => {
             scrollBeyondLastLine: false,
             automaticLayout: true
         }}
-        />
+    />
 };
 
 export default CodeEditor;
