@@ -18,7 +18,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
 
     return (
         <div>
-            <button onClick={onFormat}>Format</button>
+            <button onClick={onFormatClick}>Format</button>
 
             <MonacoEditor
                 editorDidMount={onEditorDidMount}
@@ -37,7 +37,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
                     automaticLayout: true
                 }}
             />
-        </div>);
+        </div >);
 };
 
 export default CodeEditor;
