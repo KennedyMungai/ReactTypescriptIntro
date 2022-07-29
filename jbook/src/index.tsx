@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import ReactDOM from 'react-dom';
 import CodeEditor from './components/code-editor';
 import Preview from './components/preview'
+import bundle from './bundler';
 
 const App = () => {
     const [code, setCode] = useState('');
