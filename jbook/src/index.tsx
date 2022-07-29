@@ -10,10 +10,7 @@ const App = () => {
     const [input, setInput] = useState('');
 
     const startService = async () => {
-        ref.current = await esbuild.startService({
-            worker: true,
-            wasmURL: 'https://unpkg.com/esbuild-wasm@0.8.27/esbuild.wasm'
-        });
+        ref.current = 
     };
 
     useEffect(() => {
