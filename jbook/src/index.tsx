@@ -9,10 +9,6 @@ const App = () => {
     const [code, setCode] = useState('');
     const [input, setInput] = useState('');
 
-    const startService = async () => {
-        ref.current = 
-    };
-
     useEffect(() => {
         startService();
     }, []);
