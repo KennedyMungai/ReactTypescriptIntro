@@ -1,4 +1,3 @@
-import 'bulmaswatch/superhero/bulmaswatch.min.css';
 import { useState } from "react";
 import CodeEditor from './code-editor';
 import Preview from './preview'
