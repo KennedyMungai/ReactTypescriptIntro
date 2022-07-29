@@ -2,7 +2,6 @@ interface PreviewProps {
     code: string;
 }
 
-
 const html = `
 <html>
     <head></head>
@@ -25,9 +24,11 @@ const html = `
 `;
 
 const Preview: React.FC<PreviewProps> = ({ code }) => {
+    const iframe = useRef<any>();
+
     return {
-        < iframe />
-    };
+        < iframe />;
+}
 };
 
 export default Preview;
