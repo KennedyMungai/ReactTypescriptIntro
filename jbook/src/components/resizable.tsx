@@ -1,6 +1,6 @@
 import { ResizableBox } from "react-resizable";
 
-const Resizable = () => {
+const Resizable: React.FC<> = () => {
 
 };
 
