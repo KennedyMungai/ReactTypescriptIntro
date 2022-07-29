@@ -1,6 +1,10 @@
 import { ResizableBox } from "react-resizable";
 
-const Resizable: React.FC<> = () => {
+interface ResizableProps {
+    direction: 'horizontal' | 'vertical'
+};
+
+const Resizable: React.FC<ResizableProps> = () => {
 
 };
 
