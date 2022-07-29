@@ -14,6 +14,10 @@ const html = `
         <div id="root"></div>
 
         <script>
+            const handleError = (error) => {
+                
+            };
+
             window.addEventListener('message', (event) => {
                 try{
                     eval(event.data);
