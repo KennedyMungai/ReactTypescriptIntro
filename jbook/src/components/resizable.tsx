@@ -6,7 +6,7 @@ interface ResizableProps {
 }
 
 const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
-    let resizableProps;
+    let resizableProps: ResizableBoxProps;
 
     if (direction === 'horizontal') {
         resizableProps = {
