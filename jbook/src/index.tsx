@@ -9,10 +9,6 @@ const App = () => {
     const [code, setCode] = useState('');
     const [input, setInput] = useState('');
 
-    useEffect(() => {
-        startService();
-    }, []);
-
     const onClick = async () => {
         if (!ref.current) {
             return;
