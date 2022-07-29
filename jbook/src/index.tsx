@@ -9,7 +9,7 @@ import Preview from './components/preview'
 
 const App = () => {
     const ref = useRef<any>();
-
+    const [code, setCode] = useState('');
     const [input, setInput] = useState('');
 
     const startService = async () => {
@@ -41,6 +41,8 @@ const App = () => {
                 global: 'window'
             }
         });
+
+
     };
 
     return (
