@@ -12,7 +12,7 @@ export default async (rawCode: string) => {
         });
     }
 
-    await service.build({
+    const result = await service.build({
         entryPoints: ['index.js'],
         bundle: true,
         write: false,
