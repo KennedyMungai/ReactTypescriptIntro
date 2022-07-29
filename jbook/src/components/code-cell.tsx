@@ -13,6 +13,7 @@ const CodeCell = () => {
         const timer = setTimeout(async () => {
             const output = await bundle(input);
             setCode(output.code);
+            setErr(output.error);
         }, 1000);
 
         return () => {
