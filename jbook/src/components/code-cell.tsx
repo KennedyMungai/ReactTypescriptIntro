@@ -3,7 +3,7 @@ import CodeEditor from './code-editor';
 import Preview from './preview'
 import bundle from '../bundler';
 
-const App = () => {
+const CodeCell = () => {
     const [code, setCode] = useState('');
     const [input, setInput] = useState('');
 
