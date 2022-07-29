@@ -3,7 +3,7 @@
     height: 100%;
 }
 
-.preview-wrapper::after {
+.react-draggable-transparent-selection .preview-wrapper::after {
     content: '';
     position: absolute;
     top: 0;
