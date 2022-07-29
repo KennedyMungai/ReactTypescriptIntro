@@ -14,21 +14,9 @@ const App = () => {
             return;
         }
 
-        const result = await ref.current.build({
-            entryPoints: ['index.js'],
-            bundle: true,
-            write: false,
-            plugins: [
-                unpkgPathPlugin(),
-                fetchPlugin(input)
-            ],
-            define: {
-                'process.env.NODE_ENV': '"production"',
-                global: 'window'
-            }
-        });
+        const result =
 
-        setCode(result.outputFiles[0].text);
+            setCode(result.outputFiles[0].text);
     };
 
     return (
