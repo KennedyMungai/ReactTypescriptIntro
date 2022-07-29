@@ -38,7 +38,7 @@ const html = `
 </html>
 `;
 
-const Preview: React.FC<PreviewProps> = ({ code }) => {
+const Preview: React.FC<PreviewProps> = ({ code, error }) => {
     const iframe = useRef<any>();
 
     useEffect(() => {
@@ -48,6 +48,8 @@ const Preview: React.FC<PreviewProps> = ({ code }) => {
             iframe.current.contentWindow.postMessage(code, '*');
         }, 50);
     }, [code]);
+
+    console.log(error);
 
     return (
         <div className='preview-wrapper'>
