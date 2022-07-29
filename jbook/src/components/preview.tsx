@@ -3,6 +3,7 @@ import './preview.css';
 
 interface PreviewProps {
     code: string;
+    error: string;
 }
 
 const html = `
