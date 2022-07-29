@@ -20,6 +20,10 @@ const html = `
                     console.error(error);
             };
 
+            window.addEventListener('error', (event) => {
+                console.log(event);
+            });
+
             window.addEventListener('message', (event) => {
                 try{
                     eval(event.data);
