@@ -2,7 +2,7 @@ interface PreviewProps {
     code: string;
 }
 
-const Preview: PreviewProps = () => {
+const Preview: React.FC<PreviewProps> = () => {
 
 };
 
