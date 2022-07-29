@@ -53,7 +53,7 @@ const App = () => {
             <div>
                 <button onClick={onClick}>Submit</button>
             </div>
-            <iframe />
+            <Preview />
         </div>
     )
 };
