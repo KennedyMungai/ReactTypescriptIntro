@@ -5,19 +5,19 @@ interface ResizableProps {
     direction: 'horizontal' | 'vertical';
 }
 
-let resizableProps;
-
-if (direction === 'horizontal') {
-    resizableProps = {
-
-    };
-} else {
-    resizableProps = {
-
-    };
-}
-
 const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
+    let resizableProps;
+
+    if (direction === 'horizontal') {
+        resizableProps = {
+
+        };
+    } else {
+        resizableProps = {
+
+        };
+    }
+
     return (
         <ResizableBox
             minConstraints={[Infinity, window.innerHeight * 0.2]}
