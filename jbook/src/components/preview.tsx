@@ -21,7 +21,7 @@ const html = `
             };
 
             window.addEventListener('error', (event) => {
-                console.log(event);
+                handleError(event.error);
             });
 
             window.addEventListener('message', (event) => {
