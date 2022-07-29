@@ -1,5 +1,6 @@
 import './resizable.css';
 import { ResizableBox, ResizableBoxProps } from 'react-resizable';
+import { removeItem } from 'localforage';
 
 interface ResizableProps {
     direction: 'horizontal' | 'vertical';
@@ -23,7 +24,9 @@ const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
     }
 
     return (
-        <ResizableBox>
+        <ResizableBox
+            {...resizableProps}
+        >
             {children}
         </ResizableBox>
     );
