@@ -14,7 +14,7 @@ const CodeCell = () => {
     };
 
     return (
-        <Resizable>
+        <Resizable direction="vertical">
             <div>
                 <CodeEditor
                     initialValue='const a = 1;'
