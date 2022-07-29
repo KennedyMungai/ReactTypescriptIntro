@@ -1,3 +1,6 @@
+interface PreviewProps {
+    code: string;
+}
 
 const Preview = () => {
 
