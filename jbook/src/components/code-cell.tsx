@@ -15,10 +15,6 @@ const CodeCell = () => {
         }, 1000);
     }, [input]);
 
-    const onClick = async () => {
-
-    };
-
     return (
         <Resizable direction="vertical">
             <div style={{ height: '100%', display: 'flex', flexDirection: 'row' }}>
