@@ -5,6 +5,18 @@ interface ResizableProps {
     direction: 'horizontal' | 'vertical';
 }
 
+let resizableProps;
+
+if (direction === 'horizontal') {
+    resizableProps = {
+
+    };
+} else {
+    resizableProps = {
+
+    };
+}
+
 const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
     return (
         <ResizableBox
