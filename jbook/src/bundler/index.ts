@@ -2,6 +2,8 @@ import * as esbuild from 'esbuild-wasm';
 import { fetchPlugin } from '../plugins/fetch-plugin';
 import { unpkgPathPlugin } from '../plugins/unpkg-path-plugin';
 
+let service: esbuild.Service;
+
 export default async (rawCode: string) => {
     await esbuild.startService({
         worker: true,
