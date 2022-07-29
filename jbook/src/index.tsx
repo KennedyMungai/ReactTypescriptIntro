@@ -10,6 +10,7 @@ const App = () => {
     const [input, setInput] = useState('');
 
     const onClick = async () => {
+        const output = await bundle(input);
         setCode(result.outputFiles[0].text);
     };
 
