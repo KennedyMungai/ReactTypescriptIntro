@@ -12,7 +12,7 @@ export default async (rawCode: string) => {
         });
     }
 
-    await ref.current.build({
+    await service.build({
         entryPoints: ['index.js'],
         bundle: true,
         write: false,
