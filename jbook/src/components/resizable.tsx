@@ -1,6 +1,6 @@
 import './resizable.css';
 import { ResizableBox, ResizableBoxProps } from 'react-resizable';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 interface ResizableProps {
     direction: 'horizontal' | 'vertical';
