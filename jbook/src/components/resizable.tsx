@@ -14,11 +14,11 @@ const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
         };
     } else {
         resizableProps = {
-            minConstraints={ [Infinity, window.innerHeight * 0.2]}
-            maxConstraints={ [Infinity, window.innerHeight * 0.9]}
-            height={ 300}
-            width={ Infinity }
-            resizeHandles={ ['s']}
+            minConstraints: [Infinity, window.innerHeight * 0.2],
+            maxConstraints: [Infinity, window.innerHeight * 0.9],
+            height: 300,
+            width: Infinity,
+            resizeHandles: ['s']
         };
     }
 
