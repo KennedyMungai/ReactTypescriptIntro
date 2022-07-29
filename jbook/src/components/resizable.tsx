@@ -6,9 +6,9 @@ interface ResizableProps {
 
 const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
     return (
-        <div>
-            children
-        </div>);
+        <ResizableBox>
+            {children}
+        </ResizableBox>);
 };
 
 export default Resizable;
