@@ -26,6 +26,4 @@ const CodeCell = () => {
     )
 };
 
-ReactDOM.render(
-    <App />, document.querySelector('#root')
-);
+export default CodeCell;
