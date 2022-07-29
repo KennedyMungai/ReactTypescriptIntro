@@ -10,13 +10,7 @@ const App = () => {
     const [input, setInput] = useState('');
 
     const onClick = async () => {
-        if (!ref.current) {
-            return;
-        }
-
-        const result =
-
-            setCode(result.outputFiles[0].text);
+        setCode(result.outputFiles[0].text);
     };
 
     return (
