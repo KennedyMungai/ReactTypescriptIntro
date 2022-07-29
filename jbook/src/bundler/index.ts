@@ -26,11 +26,12 @@ const bundle = async (rawCode: string) => {
                 global: 'window'
             }
         });
+
+        return result.outputFiles[0].text;
     } catch (error) {
 
     }
 
-    return result.outputFiles[0].text;
 };
 
 export default bundle;
