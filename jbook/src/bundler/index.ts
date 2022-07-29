@@ -32,7 +32,10 @@ const bundle = async (rawCode: string) => {
             err: ''
         }
     } catch (error: any) {
-        return error.message;
+        return {
+            code: '',
+            error: error.message
+        }
     }
 };
 
