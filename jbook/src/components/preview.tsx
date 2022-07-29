@@ -58,6 +58,7 @@ const Preview: React.FC<PreviewProps> = ({ code, error }) => {
                 ref={iframe} srcDoc={html}
                 sandbox="allow-scripts"
             />
+            {error && <div className='preview-error'>{error}</div>}
         </div>
 
     );
