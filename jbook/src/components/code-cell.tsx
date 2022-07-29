@@ -8,6 +8,12 @@ const CodeCell = () => {
     const [code, setCode] = useState('');
     const [input, setInput] = useState('');
 
+    useEffect(() => {
+        setTimeout(() => {
+
+        }, 1000);
+    }, [input]);
+
     const onClick = async () => {
         const output = await bundle(input);
         setCode(output);
