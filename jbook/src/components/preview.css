@@ -5,6 +5,7 @@
 
 .preview-wrapper iframe {
     height: 100%;
+    background-color: white;
 }
 
 .react-draggable-transparent-selection .preview-wrapper::after {
