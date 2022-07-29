@@ -13,6 +13,8 @@ const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
         const listener = () => {
             console.log(window.innerWidth, window.innerHeight);
         };
+
+        window.addEventListener('resize', listener);
     }, []);
 
     if (direction === 'horizontal') {
