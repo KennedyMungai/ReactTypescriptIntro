@@ -1,8 +1,6 @@
 import 'bulmaswatch/superhero/bulmaswatch.min.css';
 import { useState, useEffect, useRef } from "react";
 import ReactDOM from 'react-dom';
-import { fetchPlugin } from './plugins/fetch-plugin';
-import { unpkgPathPlugin } from './plugins/unpkg-path-plugin';
 import CodeEditor from './components/code-editor';
 import Preview from './components/preview'
 
