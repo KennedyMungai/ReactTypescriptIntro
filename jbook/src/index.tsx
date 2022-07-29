@@ -27,8 +27,6 @@ const App = () => {
             return;
         }
 
-
-
         const result = await ref.current.build({
             entryPoints: ['index.js'],
             bundle: true,
@@ -42,12 +40,7 @@ const App = () => {
                 global: 'window'
             }
         });
-
-        // setCode(result.outputFiles[0].text);
-
-
     };
-
 
     return (
         <div>
