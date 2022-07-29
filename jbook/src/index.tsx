@@ -11,7 +11,7 @@ const App = () => {
 
     const onClick = async () => {
         const output = await bundle(input);
-        setCode(result.outputFiles[0].text);
+        setCode(output);
     };
 
     return (
