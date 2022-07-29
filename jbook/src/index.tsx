@@ -27,7 +27,7 @@ const App = () => {
             return;
         }
 
-        
+
 
         const result = await ref.current.build({
             entryPoints: ['index.js'],
@@ -45,7 +45,7 @@ const App = () => {
 
         // setCode(result.outputFiles[0].text);
 
-        iframe.current.contentWindow.postMessage(result.outputFiles[0].text, '*');
+
     };
 
 
