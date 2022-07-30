@@ -17,3 +17,7 @@ const initialState: CellsState = {
     order: [],
     data: {}
 }
+
+const Reducer = (state: CellsState = initialState, action: ) => {
+
+};
