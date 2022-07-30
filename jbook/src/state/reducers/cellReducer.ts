@@ -19,5 +19,5 @@ const initialState: CellsState = {
 }
 
 const Reducer = (state: CellsState = initialState, action: Action): CellsState => {
-
+    return state;
 };
