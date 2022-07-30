@@ -16,6 +16,10 @@ interface DeleteCellAction {
 
 interface InsertCellAction {
     type: ActionType.INSERT_CELL_BEFORE;
+    payload: {
+        id: string;
+        type: 'code' | "text";
+    }
 }
 
 interface UpdateCellAction {
