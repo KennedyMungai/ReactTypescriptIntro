@@ -11,3 +11,7 @@ interface DeleteCellAction {
 interface InsertCellAction {
 
 }
+
+interface UpdateCellAction {
+
+}
