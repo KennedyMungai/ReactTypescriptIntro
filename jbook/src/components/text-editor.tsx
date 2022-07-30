@@ -12,7 +12,7 @@ const TextEditor: React.FC = () => {
         );
     }
 
-    return <div>
+    return <div onClick={() => setEditing(true)}>
         <MDEditor.Markdown source={"# Header"} />
     </div>
 };
