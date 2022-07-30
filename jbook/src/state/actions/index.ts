@@ -11,6 +11,7 @@ interface MoveCellAction {
 
 interface DeleteCellAction {
     type: ActionType.DELETE_CELL;
+    payload: string;
 }
 
 interface InsertCellAction {
