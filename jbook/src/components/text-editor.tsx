@@ -4,6 +4,10 @@ import { useState, useEffect } from "react";
 const TextEditor: React.FC = () => {
     const [editing, setEditing] = useState(false);
 
+    useEffect(() => {
+
+    }, []);
+
     if (editing) {
         return (
             <div>
