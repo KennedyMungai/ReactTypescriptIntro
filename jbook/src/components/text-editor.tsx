@@ -4,6 +4,14 @@ import { useState } from "react";
 const TextEditor: React.FC = () => {
     const [editing, setEditing] = useState(false);
 
+    if (editing) {
+        return (
+            <div>
+                <MDEditor />
+            </div>
+        );
+    }
+
     return <div>
         <MDEditor.Markdown source={"# Header"} />
     </div>
