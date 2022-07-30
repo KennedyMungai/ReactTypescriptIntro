@@ -18,6 +18,6 @@ const initialState: CellsState = {
     data: {}
 }
 
-const Reducer = (state: CellsState = initialState, action: ) => {
+const Reducer = (state: CellsState = initialState, action: Action) => {
 
 };
