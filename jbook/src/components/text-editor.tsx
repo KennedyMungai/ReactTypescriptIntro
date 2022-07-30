@@ -20,7 +20,7 @@ const TextEditor: React.FC = () => {
 
     if (editing) {
         return (
-            <div>
+            <div ref={ref}>
                 <MDEditor />
             </div>
         );
