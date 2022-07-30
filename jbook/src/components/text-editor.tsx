@@ -6,6 +6,7 @@ const TextEditor: React.FC = () => {
 
     useEffect(() => {
         const listener = (event: MouseEvent) => {
+            console.log(event.target);
             setEditing(false);
         };
 
