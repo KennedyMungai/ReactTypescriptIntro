@@ -12,6 +12,8 @@ const TextEditor: React.FC = () => {
                 return;
             }
 
+            console.log('Element clicked is outside the editor');
+
             console.log(event.target);
             setEditing(false);
         };
