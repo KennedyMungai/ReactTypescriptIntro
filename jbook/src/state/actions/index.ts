@@ -3,6 +3,10 @@ import { ActionType } from "../action-types";
 
 interface MoveCellAction {
     type: ActionType.MOVE_CELL;
+    payload: {
+        id: string;
+        direction: 'up' | 'down';
+    }
 }
 
 interface DeleteCellAction {
