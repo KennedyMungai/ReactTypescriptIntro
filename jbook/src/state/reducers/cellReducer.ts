@@ -29,7 +29,7 @@ const Reducer = (state: CellsState = initialState, action: Action): CellsState =
                         ...state.data, 
                         [action.payload.id]: { 
                             ...state.data[id],
-                            content: action.payload.content
+                            content: content
                         }
                     }
                 };
