@@ -28,10 +28,13 @@ const reducer = produce((state: CellsState = initialState, action: Action): Cell
 
         case ActionType.DELETE_CELL:
             return state;
+
         case ActionType.MOVE_CELL:
             return state;
+
         case ActionType.INSERT_CELL_BEFORE:
             return state;
+            
         default:
             return state;
     }
