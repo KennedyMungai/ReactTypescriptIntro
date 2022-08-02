@@ -12,7 +12,7 @@ const App = () => {
                 <TextEditor />
             </div>
         </Provider>
-    )
+    );
 };
 
 ReactDOM.render(
