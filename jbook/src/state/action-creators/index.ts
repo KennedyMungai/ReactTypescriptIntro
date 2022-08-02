@@ -39,4 +39,13 @@ export const moveCell = (id: string, direction: 'up' | 'down'): MoveCellAction =
     }
 };
 
-export const insertCellbefore = (id: string, cellType: CellTypes): InsertCellBeforeAction => {};
+export const insertCellbefore = (id: string, cellType: CellTypes): InsertCellBeforeAction => {
+
+    return {
+        type: ActionType.INSERT_CELL_BEFORE,
+        payload: {
+            id, 
+            type: cellType
+        }
+    };
+};
