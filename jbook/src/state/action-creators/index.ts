@@ -38,4 +38,4 @@ export const moveCell = (id: string, direction: 'up' | 'down'): MoveCellAction =
     }
 };
 
-export const insertCellbefore = (): InsertCellBeforeAction => {};
+export const insertCellbefore = (id: string, cellType: 'code' | 'text'): InsertCellBeforeAction => {};
