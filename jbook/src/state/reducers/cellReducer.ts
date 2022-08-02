@@ -21,6 +21,8 @@ const initialState: CellsState = {
 const Reducer = (state: CellsState = initialState, action: Action): CellsState => {
     switch (action.type) {
         case ActionType.UPDATE_CELL:
+            const {id, content} = action.payload;
+
             return {
                 ..state,
                 data: { 
@@ -31,7 +33,7 @@ const Reducer = (state: CellsState = initialState, action: Action): CellsState =
                         }
                     }
                 };
-                
+
         case ActionType.DELETE_CELL:
             return state;
         case ActionType.MOVE_CELL:
