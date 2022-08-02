@@ -27,6 +27,7 @@ const reducer = produce((state: CellsState = initialState, action: Action): Cell
             return;
 
         case ActionType.DELETE_CELL:
+            delete state.data[action.payload];
             return;
 
         case ActionType.MOVE_CELL:
