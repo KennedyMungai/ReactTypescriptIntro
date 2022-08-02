@@ -6,3 +6,5 @@ export const updateCell = () => {};
 export const deleteCell = () => {};
 
 export const moveCell = () => {};
+
+export const insertCellbefore = () => {};
