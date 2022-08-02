@@ -6,9 +6,9 @@ import {
             MoveCellAction, 
             InsertCellBeforeAction 
         } from '../actions';
-        
 
-export const updateCell = (): UpdateCellAction => {};
+
+export const updateCell = (id: string, content: string): UpdateCellAction => {};
 
 export const deleteCell = (): DeleteCellAction => {};
 
