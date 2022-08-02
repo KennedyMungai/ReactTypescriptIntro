@@ -7,7 +7,7 @@ import { store } from './state';
 
 const App = () => {
     return (
-        <Provider>
+        <Provider store={store}>
             <div>
                 <TextEditor />
             </div>
