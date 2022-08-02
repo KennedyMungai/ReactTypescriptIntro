@@ -19,7 +19,7 @@ export const updateCell = (id: string, content: string): UpdateCellAction => {
     };
 };
 
-export const deleteCell = (): DeleteCellAction => {};
+export const deleteCell = (id: string): DeleteCellAction => {};
 
 export const moveCell = (): MoveCellAction => {};
 
