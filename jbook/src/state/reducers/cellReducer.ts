@@ -46,4 +46,4 @@ const reducer = produce((state: CellsState = initialState, action: Action): Cell
     }
 });
 
-export default Reducer;
+export default reducer;
