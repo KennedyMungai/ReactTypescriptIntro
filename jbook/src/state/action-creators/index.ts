@@ -6,6 +6,7 @@ import {
             MoveCellAction, 
             InsertCellBeforeAction 
         } from '../actions';
+import { CellTypes } from "../cell";
 
 
 export const updateCell = (id: string, content: string): UpdateCellAction => {
@@ -38,4 +39,4 @@ export const moveCell = (id: string, direction: 'up' | 'down'): MoveCellAction =
     }
 };
 
-export const insertCellbefore = (id: string, cellType: 'code' | 'text'): InsertCellBeforeAction => {};
+export const insertCellbefore = (id: string, cellType: CellTypes): InsertCellBeforeAction => {};
