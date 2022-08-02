@@ -7,9 +7,11 @@ import { store } from './state';
 
 const App = () => {
     return (
-        <div>
-            <TextEditor />
-        </div>
+        <Provider>
+            <div>
+                <TextEditor />
+            </div>
+        </Provider>
     )
 };
 
