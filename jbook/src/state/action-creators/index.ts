@@ -1,5 +1,12 @@
 import { ActionType } from "../action-types";
-import { Action, UpdateCellAction, DeleteCellAction, MoveCellAction, InsertCellBeforeAction } from '../actions';
+import { 
+            Action, 
+            UpdateCellAction, 
+            DeleteCellAction, 
+            MoveCellAction, 
+            InsertCellBeforeAction 
+        } from '../actions';
+        
 
 export const updateCell = (): UpdateCellAction => {};
 
