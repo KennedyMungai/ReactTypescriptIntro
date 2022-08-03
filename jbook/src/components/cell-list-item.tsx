@@ -15,7 +15,9 @@ const CellListItem: React.FC<CellListItemProps> = ({ cell }) => {
         child = <TextEditor />
     }
 
-    return <div>{cell.id}</div>;
+    return <div>
+        {child}
+    </div>;
 };
 
 export default CellListItem;
