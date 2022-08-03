@@ -48,7 +48,7 @@ const reducer = produce((state: CellsState = initialState, action: Action): Cell
             const cell: Cell = {
                 content: '',
                 type: action.payload.type,
-                id: ''
+                id: randomId()
             };
 
             return state;
