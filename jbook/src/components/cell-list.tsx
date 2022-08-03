@@ -1,3 +1,7 @@
+import { useTypedSelector } from "../hooks/use-typed-selector";
+
+useTypedSelector
+
 const CellList: React.FC = () => {
     return <div>Cell List</div>;
 };
