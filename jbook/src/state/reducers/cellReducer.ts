@@ -24,11 +24,11 @@ const reducer = produce((state: CellsState = initialState, action: Action): Cell
         case ActionType.UPDATE_CELL:
             const {id, content} = action.payload;
             state.data[id].content = content;
-            return;
+            return state;
 
         case ActionType.DELETE_CELL:
             delete state.data[action.payload];
-            return;
+            return state;
 
         case ActionType.MOVE_CELL:
             const { direction } = action.payload;
@@ -42,7 +42,7 @@ const reducer = produce((state: CellsState = initialState, action: Action): Cell
             state.order[index] = state.order[targetIndex];
             state.order[targetIndex] = action.payload.id;
 
-            return;
+            return state;
 
         case ActionType.INSERT_CELL_BEFORE:
             const cell: Cell = {
