@@ -4,7 +4,7 @@ useTypedSelector
 
 const CellList: React.FC = () => {
     useTypedSelector(({cells: {order, data}}) => {
-        return order.map(() => {
+        return order.map((id) => {
             
         })
     });
