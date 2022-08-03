@@ -12,3 +12,5 @@ store.dispatch({
         type: 'code'
     }
 })
+
+console.log(store.getState());
