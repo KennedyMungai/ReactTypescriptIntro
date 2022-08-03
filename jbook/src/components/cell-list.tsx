@@ -3,7 +3,7 @@ import { useTypedSelector } from "../hooks/use-typed-selector";
 useTypedSelector
 
 const CellList: React.FC = () => {
-    useTypedSelector(({ cells: { order, data } }) =>
+    const cells = useTypedSelector(({ cells: { order, data } }) =>
         order.map((id) =>
             data[id]
         )
