@@ -12,7 +12,7 @@ const CellList: React.FC = () => {
 
     const renderedCells = cells.map(cell => <CellListItem cell={cell} />)
 
-    return <div>Cell List</div>;
+    return <div>{renderedCells}</div>;
 };
 
 export default CellList;
