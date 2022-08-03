@@ -5,7 +5,7 @@ interface CellListItemProps {
     
 }
 
-const CellListItem: React.FC = () => {
+const CellListItem: React.FC<CellListItemProps> = () => {
     return <div>Cell List Item</div>;
 };
 
