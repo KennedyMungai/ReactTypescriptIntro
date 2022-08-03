@@ -1,5 +1,5 @@
 const CellListItem: React.FC = () => {
-    return <div>Cell List</div>;
+    return <div>Cell List Item</div>;
 };
 
 export default CellListItem;
