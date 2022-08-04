@@ -4,7 +4,7 @@ import { Cell } from "../state";
 import './text-editor.css';
 
 interface TextEditorProps {
-    cell: Cell
+    cell: Cell;
 }
 
 const TextEditor: React.FC = () => {
