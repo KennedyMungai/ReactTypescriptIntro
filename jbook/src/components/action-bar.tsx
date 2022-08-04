@@ -24,7 +24,7 @@ const ActionBar: React.FC<ActionBarProps> = ( {id} ) => {
 
         <button className='button is-primary is-small' onClick={() => deleteCell(id)}>
           <span className="icon">
-            <i className="fa fa-trash" aria-hidden="true"></i>
+            <i className="fas fa-times" aria-hidden="true"></i>
           </span>
         </button>
     </div>
