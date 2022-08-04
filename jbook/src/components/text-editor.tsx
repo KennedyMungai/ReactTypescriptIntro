@@ -10,7 +10,6 @@ interface TextEditorProps {
 const TextEditor: React.FC<TextEditorProps> = ( {cell} ) => {
     const ref = useRef<HTMLDivElement | null>(null);
     const [editing, setEditing] = useState(false);
-    const [value, setValue] = useState('# Header');
 
     useEffect(() => {
         const listener = (event: MouseEvent) => {
