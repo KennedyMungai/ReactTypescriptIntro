@@ -17,6 +17,7 @@ const CellListItem: React.FC<CellListItemProps> = ({ cell }) => {
     }
 
     return <div>
+        <ActionBar id = {cell.id} />
         {child}
     </div>;
 };
