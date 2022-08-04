@@ -22,7 +22,11 @@ const ActionBar: React.FC<ActionBarProps> = ( {id} ) => {
           </span>
         </button>
 
-        <button onClick={() => deleteCell(id)}>Delete</button>
+        <button onClick={() => deleteCell(id)}>
+          <span className="icon">
+            <i className="fa fa-trash" aria-hidden="true"></i>
+          </span>
+        </button>
     </div>
   )
 }
