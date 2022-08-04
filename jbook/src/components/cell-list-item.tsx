@@ -23,6 +23,7 @@ const CellListItem: React.FC<CellListItemProps> = ({ cell }) => {
         child = 
             <>
                 <TextEditor cell={cell} />
+                <ActionBar id={cell.id} />
             </>
     }
 
