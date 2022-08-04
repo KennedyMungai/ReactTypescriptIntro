@@ -7,7 +7,7 @@ interface TextEditorProps {
     cell: Cell;
 }
 
-const TextEditor: React.FC<TextEditorProps> = () => {
+const TextEditor: React.FC<TextEditorProps> = ( {cell} ) => {
     const ref = useRef<HTMLDivElement | null>(null);
     const [editing, setEditing] = useState(false);
     const [value, setValue] = useState('# Header');
