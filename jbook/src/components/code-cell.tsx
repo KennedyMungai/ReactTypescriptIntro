@@ -6,7 +6,7 @@ import Resizable from "./resizable";
 import { Cell } from '../state';
 
 interface CodeCellProps {
-    cell: Cell
+    cell: Cell;
 };
 
 const CodeCell: React.FC<CodeCellProps> = () => {
