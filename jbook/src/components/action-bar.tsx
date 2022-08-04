@@ -2,7 +2,11 @@ import React from 'react'
 
 const ActionBar: React.FC = () => {
   return (
-    <div>ActionBar</div>
+    <div>
+        <button>Up</button>
+        <button>Down</button>
+        <button>Delete</button>
+    </div>
   )
 }
 
