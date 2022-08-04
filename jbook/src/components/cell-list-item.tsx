@@ -20,9 +20,10 @@ const CellListItem: React.FC<CellListItemProps> = ({ cell }) => {
                 <CodeCell cell={cell} />
             </> 
     } else {
-        <>
-            child = <TextEditor cell={cell} />
-        </>
+        child = 
+            <>
+                <TextEditor cell={cell} />
+            </>
     }
 
     return <div className='cell-list-item'>
