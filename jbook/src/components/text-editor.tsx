@@ -36,7 +36,7 @@ const TextEditor: React.FC<TextEditorProps> = ( {cell} ) => {
     if (editing) {
         return (
             <div className="text-editor" ref={ref}>
-                <MDEditor value={cell.content} onChange={(v) => setValue(v || '')} />
+                <MDEditor value={cell.content} onChange={(v) => updateCell(cell.id, v || '')} />
             </div>
         );
     }
