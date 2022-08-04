@@ -10,7 +10,7 @@ const ActionBar: React.FC<ActionBarProps> = ( {id} ) => {
 
   return (
     <div>
-        <button onClick={() => moveCell(id, 'up')}>
+        <button className='button is-primary is-small' onClick={() => moveCell(id, 'up')}>
           <span className="icon">
             <i className='fas fa-arrow-up'></i>
           </span>
