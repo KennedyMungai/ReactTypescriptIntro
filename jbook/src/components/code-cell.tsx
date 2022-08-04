@@ -14,6 +14,7 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) => {
     const [code, setCode] = useState('');
     const [input, setInput] = useState('');
     const [err, setErr] = useState('');
+    const { updateCell } = useActions();
 
     useEffect(() => {
         const timer = setTimeout(async () => {
