@@ -1,4 +1,8 @@
-import React from 'react'
+import React from 'react';
+
+interface ActionBarProps {
+    id: string;
+}
 
 const ActionBar: React.FC = () => {
   return (
