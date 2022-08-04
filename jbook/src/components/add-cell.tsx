@@ -5,7 +5,7 @@ interface AddCellProps {
     nextCellId: string;
 };
 
-const AddCell: React.FC<AddCellProps> = () => {
+const AddCell: React.FC<AddCellProps> = ( { nextCellId } ) => {
   return (
     <div>AddCell</div>
   )
