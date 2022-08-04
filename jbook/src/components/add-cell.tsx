@@ -1,5 +1,4 @@
 import './add-cell.css';
-
 import React from 'react'
 
 const AddCell = () => {
@@ -8,4 +7,4 @@ const AddCell = () => {
   )
 }
 
-export default AddCell
+export default AddCell;
