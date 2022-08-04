@@ -9,7 +9,7 @@ interface CodeCellProps {
     cell: Cell;
 };
 
-const CodeCell: React.FC<CodeCellProps> = () => {
+const CodeCell: React.FC<CodeCellProps> = ({ cell }) => {
     const [code, setCode] = useState('');
     const [input, setInput] = useState('');
     const [err, setErr] = useState('');
