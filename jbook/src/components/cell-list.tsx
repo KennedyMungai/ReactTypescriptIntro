@@ -17,7 +17,10 @@ const CellList: React.FC = () => {
         </>
     ))
 
-    return <div>{renderedCells}</div>;
+    return <div>
+        {renderedCells}
+        <AddCell nextCellId={null}/>
+    </div>;
 };
 
 export default CellList;
