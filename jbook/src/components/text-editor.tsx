@@ -1,5 +1,6 @@
 import MDEditor from "@uiw/react-md-editor";
 import { useState, useEffect, useRef } from "react";
+import { useActions } from "../hooks/use-actions";
 import { actionCreators, Cell } from "../state";
 import './text-editor.css';
 
@@ -10,6 +11,7 @@ interface TextEditorProps {
 const TextEditor: React.FC<TextEditorProps> = ( {cell} ) => {
     const ref = useRef<HTMLDivElement | null>(null);
     const [editing, setEditing] = useState(false);
+    const { updateCell } = useActions();
 
     useEffect(() => {
         const listener = (event: MouseEvent) => {
