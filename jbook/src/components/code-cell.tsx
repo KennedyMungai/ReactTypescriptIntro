@@ -4,6 +4,10 @@ import Preview from './preview'
 import bundle from '../bundler';
 import Resizable from "./resizable";
 
+interface CodeCellProps {
+    cell: Cell
+};
+
 const CodeCell = () => {
     const [code, setCode] = useState('');
     const [input, setInput] = useState('');
