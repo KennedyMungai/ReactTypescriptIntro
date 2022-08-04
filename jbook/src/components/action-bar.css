@@ -4,3 +4,7 @@
     right: 0;
     opacity: 25%;
 }
+
+.action-bar:hover {
+    opacity: 100%;
+}
