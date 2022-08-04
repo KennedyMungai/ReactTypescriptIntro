@@ -1,7 +1,7 @@
 import './add-cell.css';
 import React from 'react'
 
-const AddCell = () => {
+const AddCell: React.FC = () => {
   return (
     <div>AddCell</div>
   )
