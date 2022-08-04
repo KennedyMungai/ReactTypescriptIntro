@@ -11,7 +11,7 @@ const ActionBar: React.FC<ActionBarProps> = ( {id} ) => {
   return (
     <div>
         <button onClick={() => moveCell(id, 'up')}>Up</button>
-        <button>Down</button>
+        <button onClick={() => moveCell(id, 'down')}>Down</button>
         <button>Delete</button>
     </div>
   )
